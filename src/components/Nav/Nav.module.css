@@ -1,0 +1,17 @@
+.nav {
+  padding: 12px 33px;
+}
+
+.categoryList {
+  display: flex;
+}
+
+.categoryItem {
+  color: #eaeaea;
+  cursor: pointer;
+}
+
+.categoryItem:hover,
+:focus {
+  color: #ffffff;
+}

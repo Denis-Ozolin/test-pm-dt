@@ -55,9 +55,8 @@ li {
 }
 
 .app {
-  font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
-  /* background-repeat: no-repeat;
-  background-position: center; */
   width: 100%;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
