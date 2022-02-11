@@ -1,0 +1,43 @@
+.result {
+  margin-bottom: 30px;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #202020;
+}
+
+.number {
+  color: #0096c7;
+}
+
+.line {
+  width: 140px;
+  margin-bottom: 10px;
+  color: #2a172d;
+}
+
+.description {
+  max-width: 264px;
+  margin-bottom: 22px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #5b5b5b;
+}
+
+.options {
+  display: flex;
+}
+
+.select {
+  font-weight: 500;
+  line-height: 19.5px;
+  color: #0096c7;
+}
+
+.setting {
+  margin-left: auto;
+}

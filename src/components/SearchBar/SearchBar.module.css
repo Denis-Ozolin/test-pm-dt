@@ -1,0 +1,37 @@
+.form {
+  display: flex;
+  justify-content: center;
+  padding-top: 73px;
+  padding-bottom: 60px;
+}
+
+.input {
+  width: 205px;
+  height: 48px;
+  margin-right: 8px;
+  padding: 12px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.15);
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+input:first-child {
+  width: 410px;
+}
+
+.button {
+  padding: 0 20px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff9e4;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #303030;
+  cursor: pointer;
+}

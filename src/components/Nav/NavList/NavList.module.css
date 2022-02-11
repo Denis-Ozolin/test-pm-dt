@@ -1,0 +1,23 @@
+.categoryList {
+  display: flex;
+}
+
+.categoryItem {
+  box-sizing: content-box;
+  padding: 0 15px;
+  color: #eaeaea;
+  cursor: pointer;
+}
+
+.categoryItem:not(:last-child) {
+  border-right: 1px solid #ffffff;
+}
+
+.categoryItem:hover,
+:focus {
+  color: #ffffff;
+}
+
+.active {
+  color: #ffffff;
+}

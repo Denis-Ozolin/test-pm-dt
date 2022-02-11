@@ -1,0 +1,18 @@
+.language {
+  margin-left: auto;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #eaeaea;
+  cursor: pointer;
+}
+
+.auth {
+  margin-left: 25px;
+  border-bottom: 1px solid #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  cursor: pointer;
+}
