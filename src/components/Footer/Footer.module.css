@@ -1,0 +1,17 @@
+.bgContainer {
+  max-width: 375px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-repeat: repeat-y;
+  background-position: center;
+  background-image: url(../../images/background.jpg);
+}
+
+.wrapper {
+  padding-top: 130px;
+  padding-bottom: 40px;
+}
+
+.container {
+  padding: 0 20px;
+}

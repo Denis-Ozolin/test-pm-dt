@@ -1,4 +1,92 @@
 .card {
   margin-bottom: 30px;
+  padding: 16px;
   border: 1px solid #eaeaea;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  margin-right: 16px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.mainInfo {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #202020;
+}
+
+.title {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.info {
+  margin-bottom: 6px;
+}
+
+.location {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.jobList {
+  margin-bottom: 20px;
+}
+
+.job {
+  font-size: 14px;
+  line-height: 17px;
+  color: #5b5b5b;
+}
+
+.job:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.flag {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.flagStatus {
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+  border-radius: 50%;
+  background-color: #4caf50;
+}
+
+.flagTitle {
+  font-size: 12px;
+  line-height: 15px;
+  color: #4caf50;
+}
+
+.navigation {
+  display: flex;
+}
+
+.updateTime {
+  font-size: 12px;
+  line-height: 15px;
+  color: #adadad;
+}
+
+.settings {
+  display: flex;
+  margin-left: auto;
+}
+
+.button {
+  width: 24px;
+  height: 24px;
+}
+
+.button:not(:last-child) {
+  margin-right: 12px;
 }
