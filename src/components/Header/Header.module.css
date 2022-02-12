@@ -3,3 +3,13 @@
   background-position: center;
   background-image: url(../../images/background.jpg);
 }
+
+.container {
+  padding: 0 20px;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding: 0 33px;
+  }
+}

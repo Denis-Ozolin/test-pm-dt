@@ -1,0 +1,25 @@
+.toggleContainer {
+  display: flex;
+  align-items: center;
+  padding: 14px 0;
+}
+
+.img {
+  width: 16px;
+  height: 20px;
+  margin-right: 8px;
+  background-color: green;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.toggler {
+  width: 28px;
+  height: 16px;
+  margin-left: auto;
+  background-color: blue;
+}

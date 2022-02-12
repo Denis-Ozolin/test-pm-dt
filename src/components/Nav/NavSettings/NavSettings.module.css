@@ -1,5 +1,5 @@
 .language {
-  margin-left: auto;
+  margin-right: auto;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -8,6 +8,7 @@
 }
 
 .auth {
+  display: none;
   margin-left: 25px;
   border-bottom: 1px solid #ffffff;
   font-weight: 500;
@@ -15,4 +16,15 @@
   line-height: 17px;
   color: #ffffff;
   cursor: pointer;
+}
+
+@media (min-width: 1280px) {
+  .language {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .auth {
+    display: inline;
+  }
 }

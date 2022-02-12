@@ -1,5 +1,5 @@
 .categoryList {
-  display: flex;
+  display: none;
 }
 
 .categoryItem {
@@ -20,4 +20,14 @@
 
 .active {
   color: #ffffff;
+}
+
+@media (min-width: 1280px) {
+  .categoryList {
+    display: flex;
+  }
+
+  .select {
+    display: none;
+  }
 }

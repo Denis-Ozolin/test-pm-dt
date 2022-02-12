@@ -1,6 +1,4 @@
 .bgContainer {
-  max-width: 375px;
-  margin: 0 auto;
   background-repeat: no-repeat;
   background-repeat: repeat-y;
   background-position: center;
@@ -13,5 +11,6 @@
 }
 
 .container {
+  width: 100%;
   padding: 0 20px;
 }
