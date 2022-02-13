@@ -1,0 +1,67 @@
+.slider {
+  display: flex;
+  align-items: center;
+  width: 263px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+
+.line {
+  width: 226px;
+  height: 1px;
+  background-color: #000046;
+}
+
+.minMarker {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  z-index: 2;
+  pointer-events: none;
+  border-radius: 50%;
+  background-color: #000046;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  transition: transform 250ms linear;
+  cursor: pointer;
+}
+
+.maxMarker {
+  position: relative;
+  width: 23px;
+  height: 23px;
+  margin-left: auto;
+  z-index: 2;
+  pointer-events: none;
+  border: 4px solid #000046;
+  border-radius: 50%;
+  background-color: #fff9e4;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  transition: transform 250ms linear;
+  cursor: pointer;
+}
+
+.amount {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.text:not(:last-child) {
+  margin-right: 10px;
+}
+
+.number.min {
+  margin-right: 15px;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 86px;
+  height: 40px;
+  margin-right: 10px;
+  border: 1px solid #eaeaea;
+}

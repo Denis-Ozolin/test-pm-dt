@@ -14,7 +14,9 @@ function FilterContainer() {
           </svg>
         </div>
         <span className={css.title}>Фильтры</span>
-        <Toggler title="Только с фотографией" />
+        <div className={css.toggleContainer}>
+          <Toggler title="Только с фотографией" icon="person" role="switchPhotoOn" />
+        </div>
         <ul>
           {titles.map(({ id, name }) => (
             <li key={id} className={css.item}>
