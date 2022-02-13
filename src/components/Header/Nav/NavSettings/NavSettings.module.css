@@ -1,10 +1,16 @@
-.language {
+.container {
+  display: flex;
+  align-items: center;
   margin-right: auto;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #eaeaea;
+  font-size: 12px;
+  line-height: 15px;
   cursor: pointer;
+}
+
+.language {
+  padding-top: 4px;
+  color: #eaeaea;
 }
 
 .auth {
@@ -19,7 +25,7 @@
 }
 
 @media (min-width: 1280px) {
-  .language {
+  .container {
     margin-right: 0;
     margin-left: auto;
   }

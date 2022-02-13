@@ -29,6 +29,8 @@
 }
 
 .location {
+  display: flex;
+  align-items: center;
   font-size: 13px;
   line-height: 16px;
 }
@@ -69,6 +71,7 @@
 
 .navigation {
   display: flex;
+  align-items: center;
 }
 
 .updateTime {
@@ -79,7 +82,18 @@
 
 .settings {
   display: flex;
+  height: 100%;
   margin-left: auto;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.iconContainer:not(:last-child) {
+  margin-right: 12px;
 }
 
 .button {

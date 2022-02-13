@@ -6,7 +6,6 @@
   margin: 0 auto;
   margin-bottom: 108px;
   padding: 0 16px;
-  background-color: yellow;
 }
 
 .link:not(:last-child) {
@@ -16,5 +15,4 @@
 .img {
   width: 24px;
   height: 24px;
-  background-color: green;
 }

@@ -1,17 +1,16 @@
-import ResultItem from '../ResultItem';
+import ResultItem from './ResultItem';
 
 function ResultList() {
-
-  const results =['Mike', 'John', 'Bill'];
-  return(
+  const results = ['Mike', 'John', 'Bill'];
+  return (
     <ul>
       {results.map(result => (
         <li key={result}>
-          <ResultItem result={result}/>
+          <ResultItem result={result} />
         </li>
       ))}
     </ul>
-  )
+  );
 }
 
 export default ResultList;

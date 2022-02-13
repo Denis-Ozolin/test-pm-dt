@@ -1,7 +1,7 @@
-import Toggler from '../Toggler';
-import css from './FilterItem.module.css';
+import Toggler from './Toggler';
+import css from './Filters.module.css';
 
-function FilterItem({ title }) {
+function Filters({ title }) {
   return (
     <div className={css.container}>
       <p className={css.title}>{title}</p>
@@ -16,4 +16,4 @@ function FilterItem({ title }) {
   );
 }
 
-export default FilterItem;
+export default Filters;

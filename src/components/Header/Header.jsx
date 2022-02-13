@@ -1,6 +1,6 @@
-import Nav from '../Nav/Nav';
-import User from '../User';
-import SearchBar from '../SearchBar/SearchBar';
+import Nav from './Nav';
+import User from './User';
+import SearchBar from './SearchBar/SearchBar';
 import css from './Header.module.css';
 
 function Header() {
