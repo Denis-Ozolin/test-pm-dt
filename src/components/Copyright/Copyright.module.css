@@ -1,0 +1,23 @@
+.section {
+  padding-top: 10px;
+  text-align: center;
+  border-top: 0.5px solid #eaeaea;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.info {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 0 15px;
+  border-right: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.info:nth-child(2) {
+  border-right: none;
+}
+
+.copyright {
+  color: #ffffff;
+}
