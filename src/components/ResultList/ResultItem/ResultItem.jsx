@@ -1,9 +1,19 @@
+import { useState } from 'react';
 import css from './ResultItem.module.css';
 import sprite from '../../../images/svg/sprite.svg';
 
 const jobs = ['Координатор BALOX Agency - 4 мес.', 'Оператор кол центра в DELTA - 11 мес.'];
 
 function ResultItem({ result }) {
+  const [options, setOptions] = useState(false);
+
+  // const toggleOptions = (event) => {
+  //   if (event.currentTarget === event.target) {
+  //     setOptions(!options);
+  //   }
+  //     setOptions(false);
+  // }
+
   return (
     <div className={css.card}>
       <div className={css.mainInfo}>
@@ -38,7 +48,13 @@ function ResultItem({ result }) {
               <use href={`${sprite}#heart`}></use>
             </svg>
           </div>
-          <div className={css.iconContainer}>
+          {options && (
+            <ul className={css.options}>
+              <li className={css.option}>Пожаловаться</li>
+              <li className={css.option}>Скрыть кандидата</li>
+            </ul>
+          )}
+          <div onClick={() => setOptions(!options)} className={`${css.iconContainer} ${css.menu}`}>
             <svg width="25" height="24">
               <use href={`${sprite}#settings`}></use>
             </svg>

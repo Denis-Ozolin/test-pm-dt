@@ -82,6 +82,7 @@
 
 .settings {
   display: flex;
+  position: relative;
   height: 100%;
   margin-left: auto;
 }
@@ -96,11 +97,33 @@
   margin-right: 12px;
 }
 
-.button {
-  width: 24px;
-  height: 24px;
+.options {
+  position: absolute;
+  top: -70px;
+  right: 28px;
+  padding: 20px;
+  z-index: 3;
+  border: 0.5px solid #eaeaea;
+  border-radius: 12px;
+  background-color: #ffffff;
+  /* pointer-events: none; */
 }
 
-.button:not(:last-child) {
-  margin-right: 12px;
+.option {
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1e1e1e;
+  user-select: none;
+  cursor: pointer;
+  transition: color 250ms linear;
+}
+
+.option:hover,
+.option:focus {
+  color: #0096c7;
+}
+
+.option:not(:last-child) {
+  margin-bottom: 20px;
 }

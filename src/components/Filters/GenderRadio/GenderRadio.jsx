@@ -3,15 +3,18 @@ import css from './GenderRadio.module.css';
 function GenderRadio() {
   return (
     <div className={css.container}>
-      <div className={`${css.button} ${css.active}`}>
-        <span className={css.text}>Любой</span>
-      </div>
-      <div className={css.button}>
-        <span className={css.text}>Женщины</span>
-      </div>
-      <div className={css.button}>
-        <span className={css.text}>Мужчины</span>
-      </div>
+      <input type="radio" defaultChecked className={css.radio} name="gender" id="any" />
+      <label htmlFor="any" className={css.button}>
+        Любой
+      </label>
+      <input type="radio" className={css.radio} name="gender" id="women" />
+      <label htmlFor="women" className={css.button}>
+        Женщины
+      </label>
+      <input type="radio" className={css.radio} name="gender" id="men" />
+      <label htmlFor="men" className={css.button}>
+        Мужчины
+      </label>
     </div>
   );
 }
