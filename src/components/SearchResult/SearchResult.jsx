@@ -1,7 +1,7 @@
 import css from './SearchResult.module.css';
 import sprite from '../../images/svg/sprite.svg';
 
-function SearchResult() {
+function SearchResult({ openFilter }) {
   return (
     <div className={css.result}>
       <p className={css.title}>
@@ -16,8 +16,8 @@ function SearchResult() {
             <use href={`${sprite}#arrow-down-blue`}></use>
           </svg>
         </div>
-        <div className={css.setting}>
-          <svg width="48" height="48">
+        <div onClick={() => openFilter()} className={css.setting}>
+          <svg className={css.icon} width="48" height="48">
             <use href={`${sprite}#filter`}></use>
           </svg>
         </div>

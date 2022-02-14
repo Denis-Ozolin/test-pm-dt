@@ -3,10 +3,10 @@ import SearchResult from '../../components/SearchResult';
 import ResultList from '../../components/ResultList';
 import Pagination from '../../components/Pagination';
 
-function EmployerPage() {
+function EmployerPage({ openFilter }) {
   return (
     <ViewContainer>
-      <SearchResult />
+      <SearchResult openFilter={openFilter} />
       <ResultList />
       <Pagination />
     </ViewContainer>

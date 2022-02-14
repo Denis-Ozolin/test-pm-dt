@@ -4,11 +4,11 @@ import titles from '../../settings/filterTitles.json';
 import css from './FilterContainer.module.css';
 import sprite from '../../images/svg/sprite.svg';
 
-function FilterContainer() {
+function FilterContainer({ closeFilter }) {
   return (
     <section className={css.section}>
       <div className={css.container}>
-        <div className={css.closeBtn}>
+        <div onClick={() => closeFilter()} className={css.closeBtn}>
           <svg width="24" height="24">
             <use href={`${sprite}#close`}></use>
           </svg>

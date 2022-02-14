@@ -21,6 +21,12 @@
   border-radius: 8px;
   background-color: #ffffff;
   cursor: pointer;
+  transition: box-shadow 250ms linear;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  box-shadow: 0px 0px 8px rgba(13, 74, 145, 0.6);
 }
 
 .title {
