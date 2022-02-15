@@ -7,7 +7,8 @@
 }
 
 .radio {
-  display: none;
+  position: absolute;
+  appearance: none;
 }
 
 .radio:checked + .button {
@@ -24,7 +25,6 @@
   font-size: 14px;
   line-height: 17px;
   cursor: pointer;
-  user-select: none;
   transition: 'background-color' 250ms linear;
   transition: color 250ms linear;
 }

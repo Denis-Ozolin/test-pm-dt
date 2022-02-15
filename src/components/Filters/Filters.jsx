@@ -6,6 +6,7 @@ import experience from '../../settings/experience.json';
 import languageSkills from '../../settings/languageSkills.json';
 import employmentType from '../../settings/employmentType.json';
 import education from '../../settings/education.json';
+import languageLevel from '../../settings/languageLevel.json';
 import css from './Filters.module.css';
 
 function Filters({ title }) {
@@ -22,13 +23,15 @@ function Filters({ title }) {
       )}
       {title === 'Опыт работы' && (
         <>
-          <Checkbox options={experience} value="" />
+          <Checkbox options={experience} />
           <Toggler title="Только студенты" icon="mortarboard" role="switchStudentsOnly" />
         </>
       )}
-      {title === 'Владение языками' && <Checkbox options={languageSkills} value="" />}
-      {title === 'Тип занятости' && <Checkbox options={employmentType} value="" />}
-      {title === 'Образование' && <Checkbox options={education} value="" />}
+      {title === 'Владение языками' && (
+        <Checkbox options={languageSkills} gradeList={languageLevel} />
+      )}
+      {title === 'Тип занятости' && <Checkbox options={employmentType} />}
+      {title === 'Образование' && <Checkbox options={education} />}
     </div>
   );
 }

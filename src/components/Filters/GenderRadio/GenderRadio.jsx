@@ -7,12 +7,12 @@ function GenderRadio() {
       <label htmlFor="any" className={css.button}>
         Любой
       </label>
-      <input type="radio" className={css.radio} name="gender" id="women" />
-      <label htmlFor="women" className={css.button}>
+      <input type="radio" className={css.radio} name="gender" id="woman" />
+      <label htmlFor="woman" className={css.button}>
         Женщины
       </label>
-      <input type="radio" className={css.radio} name="gender" id="men" />
-      <label htmlFor="men" className={css.button}>
+      <input type="radio" className={css.radio} name="gender" id="man" />
+      <label htmlFor="man" className={css.button}>
         Мужчины
       </label>
     </div>
