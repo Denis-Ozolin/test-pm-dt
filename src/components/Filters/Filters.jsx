@@ -1,6 +1,11 @@
 import RangeSlider from './RangeSlider';
 import GenderRadio from './GenderRadio';
 import Toggler from './Toggler';
+import Checkbox from './Checkbox';
+import experience from '../../settings/experience.json';
+import languageSkills from '../../settings/languageSkills.json';
+import employmentType from '../../settings/employmentType.json';
+import education from '../../settings/education.json';
 import css from './Filters.module.css';
 
 function Filters({ title }) {
@@ -16,11 +21,14 @@ function Filters({ title }) {
         </>
       )}
       {title === 'Опыт работы' && (
-        <Toggler title="Только студенты" icon="mortarboard" role="switchStudentsOnly" />
+        <>
+          <Checkbox options={experience} value="" />
+          <Toggler title="Только студенты" icon="mortarboard" role="switchStudentsOnly" />
+        </>
       )}
-      {title === 'Владение языками' && <span>В</span>}
-      {title === 'Тип занятости' && <span>Т</span>}
-      {title === 'Образование' && <span>Об</span>}
+      {title === 'Владение языками' && <Checkbox options={languageSkills} value="" />}
+      {title === 'Тип занятости' && <Checkbox options={employmentType} value="" />}
+      {title === 'Образование' && <Checkbox options={education} value="" />}
     </div>
   );
 }

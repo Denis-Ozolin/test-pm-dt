@@ -7,13 +7,6 @@ const jobs = ['Координатор BALOX Agency - 4 мес.', 'Операто
 function ResultItem({ result }) {
   const [options, setOptions] = useState(false);
 
-  // const toggleOptions = (event) => {
-  //   if (event.currentTarget === event.target) {
-  //     setOptions(!options);
-  //   }
-  //     setOptions(false);
-  // }
-
   return (
     <div className={css.card}>
       <div className={css.mainInfo}>
