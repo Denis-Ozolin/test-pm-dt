@@ -23,7 +23,7 @@ function Checkbox({ options, gradeList = null }) {
 
   return (
     <ul className={css.container}>
-      {options.map(({ id, name, value }) => (
+      {options.map(({ id, name, value, icon }) => (
         <li key={id} className={css.item}>
           <label className={css.label} htmlFor={name}>
             <input
@@ -34,11 +34,20 @@ function Checkbox({ options, gradeList = null }) {
               id={name}
             />
             <span className={css.checkbox}></span>
+            {gradeList && (
+              <svg className={css.icon} width="24" height="24">
+                <use href={`${sprite}#${icon}`}></use>
+              </svg>
+            )}
             {name}
           </label>
           <span className={css.value}>{value}</span>
           {gradeList && (
-            <svg className={checkedList.includes(name) ? css.up : null} width="24" height="24">
+            <svg
+              className={checkedList.includes(name) ? `${css.up} ${css.arrow}` : css.arrow}
+              width="24"
+              height="24"
+            >
               <use href={`${sprite}#arrow-down`}></use>
             </svg>
           )}

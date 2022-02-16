@@ -2,31 +2,37 @@
   {
     "id": 1,
     "name": "Английский",
-    "value": 603
+    "value": 603,
+    "icon": "united-kingdom"
   },
   {
     "id": 2,
     "name": "Русский",
-    "value": 603
+    "value": 603,
+    "icon": "russia"
   },
   {
     "id": 3,
     "name": "Украинский",
-    "value": 603
+    "value": 603,
+    "icon": "ukraine"
   },
   {
     "id": 4,
     "name": "Немецкий",
-    "value": 603
+    "value": 603,
+    "icon": "germany"
   },
   {
     "id": 5,
     "name": "Польский",
-    "value": 603
+    "value": 603,
+    "icon": "poland"
   },
   {
     "id": 6,
     "name": "Испанский",
-    "value": 603
+    "value": 603,
+    "icon": "spain"
   }
 ]

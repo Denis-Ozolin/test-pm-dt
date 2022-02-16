@@ -11,6 +11,7 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
+  user-select: none;
 }
 
 .item:not(:last-child) {
@@ -41,13 +42,21 @@
   background-image: url('../../../images//svg/checkbox-done.svg');
 }
 
+.icon {
+  margin-right: 8px;
+}
+
 .value {
   display: inline-block;
   margin-left: auto;
 }
 
-.up {
+.arrow {
   position: relative;
-  top: 2px;
+  top: -2px;
+}
+
+.up {
+  top: 1px;
   transform: rotate(180deg);
 }
