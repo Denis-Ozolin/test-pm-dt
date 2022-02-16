@@ -1,4 +1,5 @@
 import css from './RangeSlider.module.css';
+import sprite from '../../../images/svg/sprite.svg';
 
 function RangeSlider({ min, max, units }) {
   return (
@@ -14,6 +15,11 @@ function RangeSlider({ min, max, units }) {
         <span className={css.text}>до</span>
         <span className={css.number}>{max}</span>
         <span className={css.text}>{units}</span>
+        {units !== 'лет' && (
+          <svg width="24" height="24">
+            <use href={`${sprite}#arrow-down`}></use>
+          </svg>
+        )}
       </div>
     </>
   );
