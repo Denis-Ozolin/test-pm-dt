@@ -1,8 +1,30 @@
-/* .list{
-} */
+.list {
+  max-width: 291px;
+  padding-left: 36px;
+}
+
+.item:first-child {
+  margin-top: 14px;
+}
 
 .item {
-  padding-right: 36px;
-
+  display: flex;
+  align-items: center;
   margin-bottom: 14px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555556;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  margin-left: 10px;
+}
+
+.value {
+  margin-left: auto;
 }

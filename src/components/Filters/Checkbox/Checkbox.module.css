@@ -45,3 +45,9 @@
   display: inline-block;
   margin-left: auto;
 }
+
+.up {
+  position: relative;
+  top: 2px;
+  transform: rotate(180deg);
+}
