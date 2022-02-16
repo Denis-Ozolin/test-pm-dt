@@ -1,8 +1,8 @@
 .nav {
   display: flex;
   flex-direction: row-reverse;
-  margin-bottom: 8px;
-  padding-top: 5px;
+  /* height: 26px; */
+  /* margin-bottom: 11px; */
 }
 
 @media (min-width: 1280px) {
