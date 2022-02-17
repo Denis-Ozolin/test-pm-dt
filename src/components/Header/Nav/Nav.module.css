@@ -1,7 +1,6 @@
 .nav {
   display: flex;
   flex-direction: row-reverse;
-  /* height: 26px; */
   /* margin-bottom: 11px; */
 }
 

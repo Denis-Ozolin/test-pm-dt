@@ -1,0 +1,45 @@
+.droplist {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  width: 110px;
+}
+
+.menu {
+  display: flex;
+}
+
+.current {
+  margin-right: 6px;
+  font-size: 13px;
+  line-height: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+}
+
+.list {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background: #000046;
+  box-shadow: 0px 0px 8px rgba(13, 74, 145, 0.6);
+}
+
+.listItem {
+  padding: 0 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.listItem:hover,
+.listItem:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.category {
+  font-size: 13px;
+  line-height: 24px;
+  color: #eaeaea;
+}
