@@ -39,7 +39,7 @@
   transform: rotate(180deg);
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1240px) {
   .item {
     font-size: 14px;
     line-height: 17px;

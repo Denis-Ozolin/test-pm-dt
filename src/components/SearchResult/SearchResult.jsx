@@ -2,7 +2,7 @@ import ResultHeader from '../ResultHeader';
 import ResultList from '../ResultList';
 import FilterContainer from '../FilterContainer';
 import Pagination from '../Pagination';
-import css from './ResultsHeader.module.css';
+import css from './SearchResult.module.css';
 
 function SearchResult({ toggleFilter }) {
   return (

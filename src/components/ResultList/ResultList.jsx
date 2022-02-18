@@ -1,19 +1,16 @@
 import ResultItem from './ResultItem';
+import css from './ResultList.module.css';
 
 function ResultList() {
   const results = ['Mike', 'John', 'Bill'];
   return (
-    <>
-      <span>RESULTS</span>
-      <ul>
-        {results.map(result => (
-          <li key={result}>
-            <span>RESULTS</span>
-            <ResultItem result={result} />
-          </li>
-        ))}
-      </ul>
-    </>
+    <ul className={css.list}>
+      {results.map(result => (
+        <li key={result}>
+          <ResultItem result={result} />
+        </li>
+      ))}
+    </ul>
   );
 }
 

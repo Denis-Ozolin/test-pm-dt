@@ -6,3 +6,9 @@
   padding-bottom: 12px;
   border-bottom: 0.5px solid #eaeaea;
 }
+
+@media (min-width: 1240px) {
+  .container {
+    padding: 20px;
+  }
+}

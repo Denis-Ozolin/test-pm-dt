@@ -1,3 +1,4 @@
+import FilterButton from '../FilterButton';
 import css from './ResultHeader.module.css';
 import sprite from '../../images/svg/sprite.svg';
 
@@ -17,11 +18,7 @@ function SearchResult({ toggleFilter }) {
               <use href={`${sprite}#arrow-down-blue`}></use>
             </svg>
           </div>
-          <div onClick={() => toggleFilter()} className={css.setting}>
-            <svg className={css.icon} width="48" height="48">
-              <use href={`${sprite}#filter`}></use>
-            </svg>
-          </div>
+          <FilterButton toggleFilter={toggleFilter} />
         </div>
       </div>
     </div>

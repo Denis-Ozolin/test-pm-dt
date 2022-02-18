@@ -16,7 +16,7 @@
   color: #ffffff;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1240px) {
   .user {
     display: none;
   }

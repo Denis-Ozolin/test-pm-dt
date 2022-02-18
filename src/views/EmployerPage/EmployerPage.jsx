@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import ViewContainer from '../../components/ViewContainer';
-import SearchResult from '../../components/ResultHeader';
+import SearchResult from '../../components/SearchResult';
 import FilterContainer from '../../components/FilterContainer';
 
 function EmployerPage() {

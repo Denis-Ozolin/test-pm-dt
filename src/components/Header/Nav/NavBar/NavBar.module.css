@@ -65,7 +65,7 @@
   font-size: 11px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1240px) {
   .droplist {
     display: none;
   }

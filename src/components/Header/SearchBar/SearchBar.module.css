@@ -39,7 +39,7 @@
   cursor: pointer;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1240px) {
   .form {
     flex-direction: row;
     padding-top: 73px;
