@@ -14,3 +14,20 @@
   width: 100%;
   padding: 0 20px;
 }
+
+.optionContainer {
+  margin-bottom: 108px;
+}
+
+@media (min-width: 1240px) {
+  .wrapper {
+    padding-top: 68px;
+    padding-bottom: 42px;
+  }
+
+  .optionContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 68px;
+  }
+}

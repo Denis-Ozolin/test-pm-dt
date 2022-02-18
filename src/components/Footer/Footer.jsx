@@ -10,9 +10,11 @@ function Footer() {
     <div className={css.bgContainer}>
       <div className={css.wrapper}>
         <div className={css.container}>
-          <FooterOptions options={otherOptions} />
-          <FooterOptions options={collaboration} />
-          <Social />
+          <div className={css.optionContainer}>
+            <FooterOptions options={otherOptions} />
+            <FooterOptions options={collaboration} />
+            <Social />
+          </div>
           <Copyright />
         </div>
       </div>

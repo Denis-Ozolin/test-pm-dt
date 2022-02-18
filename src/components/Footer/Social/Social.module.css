@@ -4,7 +4,6 @@
   width: 256px;
   height: 56px;
   margin: 0 auto;
-  margin-bottom: 108px;
   padding: 0 16px;
 }
 
@@ -15,4 +14,11 @@
 .img {
   width: 24px;
   height: 24px;
+}
+
+@media (min-width: 1240px) {
+  .social {
+    margin: 0;
+    padding: 0;
+  }
 }

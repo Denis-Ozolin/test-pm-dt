@@ -19,3 +19,10 @@
 .item:last-child {
   margin-bottom: 0;
 }
+
+@media (min-width: 1240px) {
+  .list {
+    margin-right: 228px;
+    margin-bottom: 0;
+  }
+}

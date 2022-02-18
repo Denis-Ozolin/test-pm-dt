@@ -5,7 +5,7 @@ function RadioList({ gradeList }) {
     <ul className={css.list}>
       {gradeList.map(({ id, name, value }) => (
         <li className={css.item} key={id}>
-          <input type="radio" id={name} name="group" />
+          <input className={css.radio} type="radio" id={name} name="group" />
           <label className={css.label} htmlFor={name}>
             {name}
           </label>
