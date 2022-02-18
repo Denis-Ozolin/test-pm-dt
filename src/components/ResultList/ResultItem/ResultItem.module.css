@@ -4,19 +4,18 @@
   border: 1px solid #eaeaea;
 }
 
+.container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .avatar {
   width: 70px;
   height: 70px;
   margin-right: 16px;
   border: 1px solid #000000;
   border-radius: 50%;
-}
-
-.mainInfo {
-  display: flex;
-  width: 100%;
-  margin-bottom: 20px;
-  color: #202020;
 }
 
 .title {
@@ -35,6 +34,11 @@
   line-height: 16px;
 }
 
+.locationName {
+  font-size: 13px;
+  line-height: 16px;
+}
+
 .jobList {
   margin-bottom: 20px;
 }
@@ -49,13 +53,13 @@
   margin-bottom: 12px;
 }
 
-.flag {
+/* .status {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.flagStatus {
+.statusIcon {
   width: 12px;
   height: 12px;
   margin-right: 4px;
@@ -63,72 +67,74 @@
   background-color: #4caf50;
 }
 
-.flagTitle {
+.status {
   font-size: 12px;
   line-height: 15px;
   color: #4caf50;
-}
+} */
 
 .navigation {
   display: flex;
   align-items: center;
 }
 
-.updateTime {
+/* .statusTime {
   font-size: 12px;
   line-height: 15px;
   color: #adadad;
-}
-
-.settings {
-  display: flex;
-  position: relative;
-  height: 100%;
-  margin-left: auto;
-}
-
-.iconContainer {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.iconContainer:not(:last-child) {
-  margin-right: 12px;
-}
-
-.options {
-  position: absolute;
-  top: -70px;
-  right: 28px;
-  padding: 20px;
-  z-index: 3;
-  border: 0.5px solid #eaeaea;
-  border-radius: 12px;
-  background-color: #ffffff;
-}
-
-.option {
-  white-space: nowrap;
-  font-size: 14px;
-  line-height: 17px;
-  color: #1e1e1e;
-  user-select: none;
-  cursor: pointer;
-  transition: color 250ms linear;
-}
-
-.option:hover,
-.option:focus {
-  color: #0096c7;
-}
-
-.option:not(:last-child) {
-  margin-bottom: 20px;
-}
+} */
 
 @media (min-width: 1240px) {
   .card {
-    width: 838px;
+    position: relative;
   }
+
+  .avatar {
+    width: 164px;
+    height: 164px;
+    margin-right: 20px;
+  }
+
+  .container {
+    margin-bottom: 0;
+  }
+
+  .mainInfo {
+    margin-bottom: 18px;
+  }
+
+  .title {
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .personalInfo {
+    display: flex;
+    align-items: center;
+  }
+
+  .info {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .locationName {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .jobList {
+    margin-left: 184px;
+    margin-top: -80px;
+  }
+
+  /* .statusInfo{
+    margin-left: 184px;
+  }
+
+  .statusInfo{
+    width: 164px;
+  } */
 }

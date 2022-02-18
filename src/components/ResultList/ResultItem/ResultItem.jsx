@@ -1,24 +1,25 @@
-import { useState } from 'react';
+import CardSettings from './CardSettings';
+import StatusBar from './StatusBar';
 import css from './ResultItem.module.css';
 import sprite from '../../../images/svg/sprite.svg';
 
 const jobs = ['Координатор BALOX Agency - 4 мес.', 'Оператор кол центра в DELTA - 11 мес.'];
 
 function ResultItem({ result }) {
-  const [options, setOptions] = useState(false);
-
   return (
     <div className={css.card}>
-      <div className={css.mainInfo}>
+      <div className={css.container}>
         <div className={css.avatar}></div>
-        <div>
+        <div className={css.mainInfo}>
           <h4 className={css.title}>Продавец - консультант</h4>
-          <p className={css.info}>Дмитрий, 23 года</p>
-          <div className={css.location}>
-            <svg width="24" height="25">
-              <use href={`${sprite}#location`}></use>
-            </svg>
-            <p>Kyiv, Ukraine</p>
+          <div className={css.personalInfo}>
+            <p className={css.info}>Дмитрий, 23 года</p>
+            <div className={css.location}>
+              <svg className={css.locationIcon} width="24" height="25">
+                <use href={`${sprite}#location`}></use>
+              </svg>
+              <p className={css.locationName}>Kyiv, Ukraine</p>
+            </div>
           </div>
         </div>
       </div>
@@ -29,29 +30,10 @@ function ResultItem({ result }) {
           </li>
         ))}
       </ul>
-      <div className={css.flag}>
-        <div className={css.flagStatus}></div>
-        <span className={css.flagTitle}>Онлайн</span>
-      </div>
-      <div className={css.navigation}>
-        <p className={css.updateTime}>Обновлено 9 минут назад</p>
-        <div className={css.settings}>
-          <div className={css.iconContainer}>
-            <svg width="25" height="24">
-              <use href={`${sprite}#heart`}></use>
-            </svg>
-          </div>
-          {options && (
-            <ul className={css.options}>
-              <li className={css.option}>Пожаловаться</li>
-              <li className={css.option}>Скрыть кандидата</li>
-            </ul>
-          )}
-          <div onClick={() => setOptions(!options)} className={`${css.iconContainer} ${css.menu}`}>
-            <svg width="25" height="24">
-              <use href={`${sprite}#settings`}></use>
-            </svg>
-          </div>
+      <div className={css.settingsBar}>
+        <StatusBar />
+        <div className={css.navigation}>
+          <CardSettings />
         </div>
       </div>
     </div>

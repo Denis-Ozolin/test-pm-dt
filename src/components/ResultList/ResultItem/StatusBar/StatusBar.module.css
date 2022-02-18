@@ -1,0 +1,32 @@
+.status {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.statusIcon {
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+  border-radius: 50%;
+  background-color: #4caf50;
+}
+
+.status {
+  font-size: 12px;
+  line-height: 15px;
+  color: #4caf50;
+}
+
+.statusTime {
+  font-size: 12px;
+  line-height: 15px;
+  color: #adadad;
+}
+
+@media (min-width: 1240px) {
+  .statusInfo {
+    width: 164px;
+    margin-left: 184px;
+  }
+}

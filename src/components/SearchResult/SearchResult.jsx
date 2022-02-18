@@ -9,10 +9,12 @@ function SearchResult({ toggleFilter }) {
     <>
       <ResultHeader toggleFilter={toggleFilter} />
       <div className={css.results}>
-        <ResultList />
+        <div>
+          <ResultList />
+          <Pagination />
+        </div>
         <FilterContainer toggleFilter={toggleFilter} />
       </div>
-      <Pagination />
     </>
   );
 }
