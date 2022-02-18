@@ -7,7 +7,6 @@
 
 .auth {
   display: none;
-  margin-left: 25px;
   border-bottom: 1px solid #ffffff;
   font-weight: 500;
   font-size: 14px;
@@ -18,8 +17,8 @@
 
 @media (min-width: 1280px) {
   .container {
-    margin-right: 0;
     margin-left: auto;
+    margin-right: 105px;
   }
 
   .auth {

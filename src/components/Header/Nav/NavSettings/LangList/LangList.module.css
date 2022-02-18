@@ -1,6 +1,5 @@
 .select {
-  position: relative;
-  left: 28px;
+  position: absolute;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -8,7 +7,6 @@
 }
 
 .item {
-  position: absolute;
   display: flex;
   align-items: center;
   font-weight: 300;
@@ -19,7 +17,13 @@
 }
 
 .item.drop {
+  position: absolute;
   top: 20px;
+}
+
+.item.drop:hover,
+.item.drop:focus {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .language {
@@ -35,13 +39,19 @@
   transform: rotate(180deg);
 }
 
-/* @media (min-width: 1280px) {
-  .container {
-    margin-right: 0;
-    margin-left: auto;
+@media (min-width: 1280px) {
+  .item {
+    font-size: 14px;
+    line-height: 17px;
   }
 
-  .auth {
-    display: inline;
+  .item.drop {
+    top: 30px;
+    right: 24px;
   }
-} */
+
+  .iconInternet {
+    width: 41px;
+    height: 41px;
+  }
+}

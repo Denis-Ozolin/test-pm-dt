@@ -28,22 +28,22 @@ function LangList() {
     return;
   };
   return (
-    <ul className={css.select}>
-      <li onClick={() => handleOpen()} className={css.item}>
-        <svg width="24" height="24">
+    <div className={css.select}>
+      <div onClick={() => handleOpen()} className={css.item}>
+        <svg className={css.iconInternet} width="24" height="24">
           <use href={`${sprite}#internet`}></use>
         </svg>
         <p className={css.language}>{firsLang}</p>
         <svg className={isOpen ? css.up : null} width="24" height="21">
           <use href={`${sprite}#arrow-right-lang`}></use>
         </svg>
-      </li>
+      </div>
       {isOpen && (
-        <li onClick={() => handelChange()} className={`${css.item} ${css.drop}`}>
+        <div onClick={() => handelChange()} className={`${css.item} ${css.drop}`}>
           <p className={css.language}>{twoLang}</p>
-        </li>
+        </div>
       )}
-    </ul>
+    </div>
   );
 }
 

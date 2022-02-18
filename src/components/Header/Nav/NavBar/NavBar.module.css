@@ -1,7 +1,7 @@
 .droplist {
   position: relative;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   width: 110px;
 }
 
@@ -42,4 +42,35 @@
   font-size: 13px;
   line-height: 24px;
   color: #eaeaea;
+}
+
+.navList {
+  display: none;
+  align-items: flex-end;
+}
+
+.navItem:nth-child(2) > .link {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.link {
+  color: #eaeaea;
+  cursor: pointer;
+}
+
+.navItem:not(:last-child) > .line {
+  margin: 0 15px;
+  border-right: 1px solid #ffffff;
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .droplist {
+    display: none;
+  }
+
+  .navList {
+    display: flex;
+  }
 }
