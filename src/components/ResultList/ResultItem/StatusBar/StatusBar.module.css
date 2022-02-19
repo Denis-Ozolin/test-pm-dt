@@ -1,10 +1,23 @@
-.status {
+.statusInfo {
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+}
+
+.statusContainer {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
+.status {
+  font-size: 12px;
+  line-height: 15px;
+  color: #4caf50;
+}
+
 .statusIcon {
+  display: block;
   width: 12px;
   height: 12px;
   margin-right: 4px;
@@ -12,10 +25,10 @@
   background-color: #4caf50;
 }
 
-.status {
-  font-size: 12px;
-  line-height: 15px;
-  color: #4caf50;
+.settingsBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .statusTime {
@@ -26,7 +39,16 @@
 
 @media (min-width: 1240px) {
   .statusInfo {
-    width: 164px;
-    margin-left: 184px;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .statusContainer {
+    margin-bottom: 0;
+  }
+
+  .statusTime {
+    margin-right: 20px;
   }
 }

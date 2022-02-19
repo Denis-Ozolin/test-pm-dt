@@ -1,0 +1,13 @@
+.jobList {
+  margin-bottom: 20px;
+}
+
+.job {
+  font-size: 14px;
+  line-height: 17px;
+  color: #5b5b5b;
+}
+
+.job:not(:last-child) {
+  margin-bottom: 12px;
+}

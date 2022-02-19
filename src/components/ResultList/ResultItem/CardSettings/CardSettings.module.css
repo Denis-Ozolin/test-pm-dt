@@ -1,26 +1,28 @@
 .settings {
   position: relative;
   display: flex;
-  height: 100%;
-  margin-left: auto;
+  width: 60px;
+}
+
+.iconContainer:first-child {
+  margin-right: 12px;
 }
 
 .iconContainer {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
   cursor: pointer;
-}
-
-.iconContainer:not(:last-child) {
-  margin-right: 12px;
 }
 
 .options {
   position: absolute;
-  top: -70px;
-  right: 28px;
+  top: -60px;
+  left: -142px;
+  z-index: 2;
   padding: 20px;
-  z-index: 3;
   border: 0.5px solid #eaeaea;
   border-radius: 12px;
   background-color: #ffffff;
@@ -48,12 +50,21 @@
 @media (min-width: 1240px) {
   .settings {
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 20px;
+    width: 104px;
+    transform: translate(0, -50%);
+  }
+
+  .iconContainer {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    border: 0.5px solid #eaeaea;
   }
 
   .options {
-    top: 24px;
-    right: 24px;
+    top: -3px;
+    left: -124px;
   }
 }

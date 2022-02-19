@@ -6,7 +6,7 @@ function ResultList() {
   return (
     <ul className={css.list}>
       {results.map(result => (
-        <li key={result}>
+        <li className={css.listItem} key={result}>
           <ResultItem result={result} />
         </li>
       ))}

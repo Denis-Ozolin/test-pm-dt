@@ -1,6 +1,14 @@
+.listItem {
+  margin-bottom: 30px;
+}
+
 @media (min-width: 1240px) {
   .list {
     width: 838px;
     margin-right: 40px;
+  }
+
+  .listItem {
+    margin-bottom: 40px;
   }
 }

@@ -2,8 +2,8 @@ import { useState } from 'react';
 import css from './CardSettings.module.css';
 import sprite from '../../../../images/svg/sprite.svg';
 
-function CardSettings() {
-  const [options, setOptions] = useState(false);
+function CardSettings({ options }) {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className={css.settings}>
@@ -12,17 +12,20 @@ function CardSettings() {
           <use href={`${sprite}#heart`}></use>
         </svg>
       </div>
-      {options && (
-        <ul className={css.options}>
-          <li className={css.option}>Пожаловаться</li>
-          <li className={css.option}>Скрыть кандидата</li>
-        </ul>
-      )}
-      <div onClick={() => setOptions(!options)} className={`${css.iconContainer} ${css.menu}`}>
+      <div onClick={() => setIsOpen(!isOpen)} className={css.iconContainer}>
         <svg width="25" height="24">
           <use href={`${sprite}#settings`}></use>
         </svg>
       </div>
+      {isOpen && (
+        <ul className={css.options}>
+          {options.map(({ id, name }) => (
+            <li className={css.option} key={id}>
+              {name}
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
