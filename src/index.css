@@ -18,11 +18,18 @@
 }
 
 body {
-  width: 100%;
-  height: auto;
+  width: 375px;
+  min-height: 100vh;
+  margin: 0 auto;
   font-size: 16px;
   line-height: 20px;
   font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 1240px) {
+  body {
+    width: 100%;
+  }
 }
 
 img {
