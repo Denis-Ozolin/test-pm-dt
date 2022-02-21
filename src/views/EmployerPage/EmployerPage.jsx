@@ -3,7 +3,7 @@ import ViewContainer from '../../components/ViewContainer';
 import SearchResult from '../../components/SearchResult';
 import FilterContainer from '../../components/FilterContainer';
 
-function EmployerPage({ summaries }) {
+function EmployerPage() {
   const [isShowingFilter, setIsShowingFilter] = useState(false);
 
   const toggleFilter = () => setIsShowingFilter(!isShowingFilter);
@@ -11,7 +11,7 @@ function EmployerPage({ summaries }) {
   return (
     <ViewContainer>
       {!isShowingFilter ? (
-        <SearchResult toggleFilter={toggleFilter} summaries={summaries} />
+        <SearchResult toggleFilter={toggleFilter} />
       ) : (
         <FilterContainer toggleFilter={toggleFilter} />
       )}

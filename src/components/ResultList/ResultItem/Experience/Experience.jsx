@@ -1,13 +1,13 @@
 import css from './Experience.module.css';
 import formatData from '../../../../helpers/formatData';
 
-function Experience({ jobs }) {
+function Experience({ workList }) {
   return (
     <ul className={css.jobList}>
-      {jobs.length ? (
-        jobs.map(job => (
-          <li key={job.id} className={css.job}>
-            {job.company_name} - {formatData(job.date_from, job.date_to)}
+      {workList.length ? (
+        workList.map(({ id, company_name, date_from, date_to }) => (
+          <li key={id} className={css.job}>
+            {company_name} - {formatData(date_from, date_to)}
           </li>
         ))
       ) : (

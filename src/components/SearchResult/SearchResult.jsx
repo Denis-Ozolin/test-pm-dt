@@ -4,13 +4,13 @@ import FilterContainer from '../FilterContainer';
 import Pagination from '../Pagination';
 import css from './SearchResult.module.css';
 
-function SearchResult({ toggleFilter, summaries }) {
+function SearchResult({ toggleFilter }) {
   return (
     <>
       <ResultHeader toggleFilter={toggleFilter} />
       <div className={css.results}>
         <div>
-          <ResultList summaries={summaries} />
+          <ResultList />
           <Pagination />
         </div>
         <FilterContainer toggleFilter={toggleFilter} />

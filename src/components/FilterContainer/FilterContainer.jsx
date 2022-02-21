@@ -1,5 +1,6 @@
 import Toggler from '../Filters/Toggler';
 import Filters from '../Filters';
+import { togglePhoto } from '../../store/summarySlice';
 import titles from '../../settings/filterTitles.json';
 import css from './FilterContainer.module.css';
 import sprite from '../../images/svg/sprite.svg';
@@ -14,7 +15,12 @@ function FilterContainer({ toggleFilter }) {
       </div>
       <span className={css.title}>Фильтры</span>
       <div className={css.toggleContainer}>
-        <Toggler title="Только с фотографией" icon="person" role="switchPhotoOn" />
+        <Toggler
+          onToggle={togglePhoto}
+          title="Только с фотографией"
+          icon="person"
+          role="switchPhotoOn"
+        />
       </div>
       <ul>
         {titles.map(({ id, name }) => (
