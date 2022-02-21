@@ -5,18 +5,18 @@ import FilterContainer from '../FilterContainer';
 import Pagination from '../Pagination';
 import css from './SearchResult.module.css';
 
-function SearchResult({ toggleFilter }) {
+function SearchResult() {
   const deviceWidth = useSelector(state => state.deviceSize.width);
 
   return (
     <>
-      <ResultHeader toggleFilter={toggleFilter} />
+      <ResultHeader />
       <div className={css.results}>
         <div>
           <ResultList />
           <Pagination />
         </div>
-        {deviceWidth >= 1240 && <FilterContainer toggleFilter={toggleFilter} />}
+        {deviceWidth >= 1240 && <FilterContainer />}
       </div>
     </>
   );
