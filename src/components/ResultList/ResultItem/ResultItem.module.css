@@ -10,8 +10,14 @@
   width: 70px;
   height: 70px;
   margin-right: 16px;
+}
+
+.img {
+  width: 70px;
+  height: 70px;
   border: 1px solid #000000;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .container {
@@ -24,6 +30,7 @@
 
 @media (min-width: 1240px) {
   .card {
+    position: relative;
     flex-wrap: wrap;
     padding: 20px;
   }
@@ -34,17 +41,16 @@
     margin-right: 20px;
   }
 
+  .img {
+    width: 164px;
+    height: 164px;
+  }
+
   .container {
     width: auto;
   }
 
   .content {
     margin-left: 0;
-  }
-}
-
-@media (min-width: 1240px) {
-  .card {
-    position: relative;
   }
 }

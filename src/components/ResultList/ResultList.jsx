@@ -1,13 +1,12 @@
 import ResultItem from './ResultItem';
 import css from './ResultList.module.css';
 
-function ResultList() {
-  const results = ['Mike', 'John', 'Bill'];
+function ResultList({ summaries }) {
   return (
     <ul className={css.list}>
-      {results.map(result => (
-        <li className={css.listItem} key={result}>
-          <ResultItem result={result} />
+      {summaries.map(summary => (
+        <li className={css.listItem} key={summary.id}>
+          <ResultItem summary={summary} />
         </li>
       ))}
     </ul>
