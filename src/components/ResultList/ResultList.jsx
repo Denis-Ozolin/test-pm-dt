@@ -6,9 +6,9 @@ import css from './ResultList.module.css';
 
 function ResultList() {
   const summaries = useSelector(state => state.summaries.summaries);
-  const photo = useSelector(state => state.summaries.photo);
+  const photoOn = useSelector(state => state.summaries.photo);
 
-  const filteredList = photo ? filteredPhotoOn(summaries) : summaries;
+  const filteredList = photoOn ? filteredPhotoOn(summaries) : summaries;
 
   useEffect(() => {
     if (!filteredList.length) {

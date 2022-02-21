@@ -13,9 +13,6 @@ const summarySlice = createSlice({
     togglePhoto(state, action) {
       state.photo = action.payload;
     },
-    // getPhotoOn(state, action){
-    //   state.summaries = state.summaries.filter(summary => summary.photo !== null);
-    // }
   },
 });
 
