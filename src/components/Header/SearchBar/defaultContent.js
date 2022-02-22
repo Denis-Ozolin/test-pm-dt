@@ -1,6 +1,11 @@
 export const defaultContent = {
-  mobileQuery: 'Поиск',
-  desktopQuery: 'На какую должность вы ищете кандидата?',
+  mobile: {
+    placeholder: 'Поиск',
+    buttonValue: 'Найти кандидата',
+  },
+  desktop: {
+    placeholder: 'На какую должность вы ищете кандидата?',
+    buttonValue: 'Найти кандидатов',
+  },
   city: 'Город',
-  buttonValue: 'Найти кандидатов',
 };

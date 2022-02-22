@@ -16,7 +16,7 @@ function ResultItem({ summary }) {
         <MainInfo summary={summary} />
         <div className={css.content}>
           <Experience workList={workexperience} />
-          <StatusBar options={options} />
+          <StatusBar options={options} updateTime={summary.updated_at} />
         </div>
       </div>
     </div>

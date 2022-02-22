@@ -5,8 +5,9 @@ import sprite from '../../../images/svg/sprite.svg';
 
 function SearchBar() {
   const deviceWidth = useSelector(state => state.deviceSize.width);
-  const { mobileQuery, desktopQuery, city, buttonValue } = defaultContent;
-  const placeholder = deviceWidth < 1240 ? mobileQuery : desktopQuery;
+  const { mobile, desktop, city } = defaultContent;
+  const placeholder = deviceWidth < 1240 ? mobile.placeholder : desktop.placeholder;
+  const buttonValue = deviceWidth < 1240 ? mobile.buttonValue : desktop.buttonValue;
 
   const onSubmit = e => {
     e.preventDefault();

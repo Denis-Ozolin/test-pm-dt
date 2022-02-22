@@ -6,7 +6,9 @@ function RangeSlider({ min, max, units }) {
     <>
       <div className={css.slider}>
         <div className={css.minMarker}></div>
-        <div className={css.line}></div>
+        <div className={css.line}>
+          <div className={css.filledLine}></div>
+        </div>
         <div className={css.maxMarker}></div>
       </div>
       <div className={css.amount}>

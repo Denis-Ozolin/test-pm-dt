@@ -1,12 +1,15 @@
+import { useSelector } from 'react-redux';
 import FilterButton from '../FilterButton';
 import css from './ResultHeader.module.css';
 import sprite from '../../images/svg/sprite.svg';
 
 function SearchResult() {
+  const amountOfSummaries = useSelector(state => state.summaries.totalSummaries);
+
   return (
     <div className={css.result}>
       <p className={css.title}>
-        Мы подобрали <span className={css.number}>451 642</span> резюме
+        Мы подобрали <span className={css.number}>{amountOfSummaries}</span> резюме
       </p>
       <hr className={css.line} />
       <div className={css.container}>

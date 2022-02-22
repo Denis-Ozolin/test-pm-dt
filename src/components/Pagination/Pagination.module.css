@@ -1,6 +1,60 @@
 .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 272px;
   height: 40px;
   margin: 0 auto;
-  background-color: cadetblue;
+}
+
+.pagination span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1px;
+  line-height: 16px;
+  color: #a6a6a6;
+  text-decoration: none;
+  transition: background-color 250ms linear;
+  transition: color 250ms linear;
+  cursor: pointer;
+}
+
+.pagination span svg {
+  stroke: #000046;
+  transition: stroke 250ms linear;
+}
+
+.pagination span:hover,
+.pagination span svg:hover {
+  stroke: #0096c7;
+  color: #0096c7;
+}
+
+.pagination span:not(:last-child) {
+  margin-right: 16px;
+}
+
+.pagination span:nth-last-child(2) {
+  margin-right: 0;
+}
+
+.pagination span:first-child {
+  margin-right: 25px;
+}
+
+.pagination span:last-child {
+  margin-left: 25px;
+}
+
+.pagination span.active {
+  min-width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #000046;
+  color: #ffffff;
+}
+
+.pagination span svg.disabled {
+  stroke: #adadad;
 }

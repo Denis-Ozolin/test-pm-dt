@@ -1,24 +1,25 @@
-import { useState, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import Header from '../components/Header';
 import EmployerPage from '../views/EmployerPage';
 import Footer from '../components/Footer';
 import getSummaries from '../api/apiSettings';
-import { addSummaries } from '../store/summarySlice';
+import { updateTotalPages, addSummaries, getTotalSummaries } from '../store/summarySlice';
 import { resizeWidth } from '../store/deviceSizeSlice';
 
 function App() {
   const dispatch = useDispatch();
-  const [currentPage, setCurrentPage] = useState(1);
-
+  const currentPage = useSelector(state => state.summaries.currentPage);
+  // const photoOn = useSelector(state => state.summaries.photo);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const updateWidth = () => dispatch(resizeWidth(window.innerWidth));
 
   useEffect(() => {
-    if (currentPage > 3) return;
     getSummaries(currentPage).then(res => {
+      console.log(res);
+      dispatch(updateTotalPages(res.page_count));
+      dispatch(getTotalSummaries(res.total));
       dispatch(addSummaries(res.results));
-      setCurrentPage(currentPage => currentPage + 1);
     });
   }, [currentPage, dispatch]);
 

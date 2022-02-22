@@ -1,22 +1,31 @@
 .slider {
   display: flex;
   align-items: center;
-  width: 263px;
-  margin: 0 auto;
+  width: 305px;
   padding-top: 20px;
   padding-bottom: 16px;
 }
 
 .line {
-  width: 226px;
+  width: 100%;
+  height: 1px;
+  background-color: #eaeaea;
+}
+
+.filledLine {
+  position: absolute;
+  left: 43px;
+  width: 225px;
   height: 1px;
   background-color: #000046;
 }
 
 .minMarker {
   position: relative;
-  width: 14px;
-  height: 14px;
+  left: 21px;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
   z-index: 2;
   pointer-events: none;
   border-radius: 50%;
@@ -28,9 +37,10 @@
 
 .maxMarker {
   position: relative;
+  right: 40px;
   width: 23px;
   height: 23px;
-  margin-left: auto;
+  flex-shrink: 0;
   z-index: 2;
   pointer-events: none;
   border: 4px solid #000046;
